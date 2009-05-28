@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F55386E4-6C21-4E29-83C6-40558BB847A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrackMan.Framework</RootNamespace>
+    <AssemblyName>TrackMan.Framework</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Components.Validator, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\tools\castle\Castle.Components.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Repositories\AssetListService.cs" />
+    <Compile Include="Assets\Repositories\AssetNotFoundException.cs" />
+    <Compile Include="Assets\Repositories\SimpleAssetRepository\ISimpleAssetRepository.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\DuplicateItemAddedException.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\IAssetRepository.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\UnitOfWork\DuplicateWorkItemAddedException.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\UnitOfWork\ListUnitOfWork.cs" />
+    <Compile Include="Assets\Repositories\UOWAssetRepository\UOWAssetRepository.cs" />
+    <Compile Include="Assets\Repositories\Queries.cs" />
+    <Compile Include="Assets\Repositories\SPListItemWrapper.cs" />
+    <Compile Include="DeletingCommandException.cs" />
+    <Compile Include="Resources\AssetQueries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetQueries.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\Asset.cs" />
+    <Compile Include="Assets\Repositories\AssetItem.cs" />
+    <Compile Include="Assets\Repositories\SimpleAssetRepository\SimpleAssetRepository.cs" />
+    <Compile Include="ListServices\IListItemWrapper.cs" />
+    <Compile Include="ListServices\FieldValues\LookupFieldValue.cs" />
+    <Compile Include="ListServices\FieldValues\DecimalFieldValue.cs" />
+    <Compile Include="ListServices\FieldValues\TextFieldValue.cs" />
+    <Compile Include="ListServices\IEntityItem.cs" />
+    <Compile Include="ListServices\IListService.cs" />
+    <Compile Include="Resources\ValidationMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IDeletingCommand.cs" />
+    <Compile Include="Rooms\Repository\RoomRepository.cs" />
+    <Compile Include="Rooms\Room.cs" />
+    <Compile Include="Rooms\RoomDeletingCommand.cs" />
+    <Compile Include="Validation\ValidationExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AssetQueries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssetQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ValidationMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMan.Solution", "TrackMan.Solution\TrackMan.Solution.csproj", "{CFF48E40-DAEA-4B88-BFFE-E508F9222A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMan.Framework", "TrackMan.Framework\TrackMan.Framework.csproj", "{F55386E4-6C21-4E29-83C6-40558BB847A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMan.Framework.UnitTests", "TrackMan.Framework.UnitTests\TrackMan.Framework.UnitTests.csproj", "{AD5344CB-9C59-440C-BF0E-EA8FAAF91F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMan.TestHelpers", "TrackMan.TestHelpers\TrackMan.TestHelpers.csproj", "{F7930E8C-CBEC-4F2C-B22B-5914815D11D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMan.Framework.IntegrationTests", "TrackMan.Framework.IntegrationTests\TrackMan.Framework.IntegrationTests.csproj", "{73F21E63-7B82-41A1-A099-F74075A3A326}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFF48E40-DAEA-4B88-BFFE-E508F9222A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF48E40-DAEA-4B88-BFFE-E508F9222A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF48E40-DAEA-4B88-BFFE-E508F9222A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF48E40-DAEA-4B88-BFFE-E508F9222A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55386E4-6C21-4E29-83C6-40558BB847A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55386E4-6C21-4E29-83C6-40558BB847A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55386E4-6C21-4E29-83C6-40558BB847A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55386E4-6C21-4E29-83C6-40558BB847A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD5344CB-9C59-440C-BF0E-EA8FAAF91F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5344CB-9C59-440C-BF0E-EA8FAAF91F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5344CB-9C59-440C-BF0E-EA8FAAF91F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5344CB-9C59-440C-BF0E-EA8FAAF91F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7930E8C-CBEC-4F2C-B22B-5914815D11D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7930E8C-CBEC-4F2C-B22B-5914815D11D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7930E8C-CBEC-4F2C-B22B-5914815D11D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7930E8C-CBEC-4F2C-B22B-5914815D11D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F21E63-7B82-41A1-A099-F74075A3A326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F21E63-7B82-41A1-A099-F74075A3A326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F21E63-7B82-41A1-A099-F74075A3A326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F21E63-7B82-41A1-A099-F74075A3A326}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
