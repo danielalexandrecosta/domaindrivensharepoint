@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="7a195b37-87fd-4fc4-bf6a-c7817563cb40"
+          Title="TrackMan Feature"
+          Description="Installs TrackMan feature so this site can be used to track assets."
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+  </ElementManifests>
+</Feature>

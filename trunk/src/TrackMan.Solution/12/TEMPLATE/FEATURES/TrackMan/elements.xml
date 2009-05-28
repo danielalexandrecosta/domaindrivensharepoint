@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate 
+    Name="AssetList" 
+    Type="10001" 
+    BaseType="0" 
+    VersioningEnabled="True" 
+    Hidden="false" 
+    Sequence="2001" 
+    DisplayName="Asset List" 
+    Description="Contains a list of assets." 
+    AllowEveryoneViewItems="true"
+    SecurityBits="11"
+    Image="/_layouts/images/itcontct.gif" />
+</Elements>
