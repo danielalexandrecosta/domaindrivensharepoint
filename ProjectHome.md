@@ -1,0 +1,1 @@
+This project shows how you can go about using Domain Driven Design within SharePoint. The project uses SOLID principles for design and attempts so seperate the SharePoint object model and its domain from the business domain. The classes inside the ListServices folder show how lists and list items are abstracted so that unit testing can be done on the business domain.
